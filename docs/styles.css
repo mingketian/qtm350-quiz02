@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+h1, h2 {
+    color: #333;
+}
+.navbar {
+    background-color: #0073e6;
+    padding: 10px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+

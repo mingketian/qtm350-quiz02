@@ -1,0 +1,23 @@
+---
+title: "Country Analysis"
+---
+
+# Country Analysis with Interactive Map
+
+```{python}
+import pandas as pd
+import plotly.express as px
+
+gapminder = pd.read_csv("gapminder.csv")
+
+latest_year = gapminder["year"].max()
+latest_data = gapminder[gapminder["year"] == latest_year]
+
+fig = px.choropleth(latest_data, locations="country", locationmode="country names",
+                     color="life_expectancy",
+                     hover_name="country",
+                     title=f"Life Expectancy in {latest_year}",
+                     color_continuous_scale="Blues")
+
+fig.show()
+```

@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs  # Store output in docs folder for GitHub Pages
+
+website:
+  title: "Gapminder Analysis"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: life-gdp.qmd
+        text: "Life Expectancy and GDP per Capita"
+      - href: life-population.qmd
+        text: "Life Expectancy and Population"
+      - href: country.qmd
+        text: "Country Analysis"
+  page-footer: "© 2025 Gapminder Analysis Project"
+
+format:
+  html:
+    theme: cosmo 
+    css: styles.css
